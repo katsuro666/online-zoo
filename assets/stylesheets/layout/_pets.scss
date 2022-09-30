@@ -1,0 +1,64 @@
+.pets {
+    margin-top: 180px;
+    background: url(/assets/images/background-palm.png) no-repeat left bottom 0px / auto 40%, 
+                url(/assets/images/background-strelitzia.png) no-repeat right bottom 0px / auto 25%;
+}
+
+.pets-inner {
+    position: relative;
+}
+
+.pets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    justify-content: space-between;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    margin-left: -10px;
+}
+
+.pets-container__item {
+    position: relative;
+    outline: 1px solid rgba(250, 111, 50, 1);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.pets-container__item-picture:hover {
+    position: relative;
+    transform: scale(1.027);
+    transition: transform 500ms;
+}
+
+.pets-container__item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & img {
+        margin: auto;
+    }
+}
+
+.pets-container__item-info_desc {
+    width: 294px;
+    margin: 8px auto 14px 16px;
+}
+
+.pets-container__item-info_name {
+    @include btn;
+    margin: auto;
+}
+
+.pets-container__item-info_location {
+    @include smallParagraph;
+    margin: auto;
+}
+
+/* .pets_inner-container:hover + div {
+    display: block;
+} */
+
+.pets-container__item:hover .pets_popup_container {
+    display: block;
+}

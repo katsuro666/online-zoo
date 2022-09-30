@@ -22,11 +22,13 @@
   'layout/header',
   'layout/watch-online',
   'layout/the-backstage',
+  'layout/pets',
   'layout/footer';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/popup';
 
 // 6. Page-specific styles
 @import

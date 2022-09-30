@@ -1,14 +1,18 @@
 .the-backstage {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    width: 1160px;
+    padding-top: 80px;
+    background: url(/assets/images/background-flower.png) no-repeat right top 12px / auto 100%;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 1560px;
+    }
 }
 
 .the-backstage__info {
     display: flex;
     flex-direction: column;
-    margin-left: 87px;
+    margin-left: 78px;
 
     & h2 {
         @include h2;

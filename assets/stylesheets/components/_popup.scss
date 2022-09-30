@@ -1,0 +1,23 @@
+.pets_popup_container {
+    display: none;
+    position: absolute;
+    bottom: -60px;
+    left: 15px;
+    z-index: 100;
+}
+
+.popup__name {
+    @include body;
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    margin: 8px auto 0 10px;
+}
+
+.popup__location {
+    @include body;
+    margin: 5px auto 11px 10px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+}

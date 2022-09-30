@@ -14,3 +14,52 @@
         background: $green;
     }
 }
+
+.watch-online__button {
+    margin-right: 99px;
+    width: 298px;
+    height: 54px;
+}
+
+.pets__button {
+    transform: translate(-50%);
+    margin: 80px 50% 100px 50%;
+    width: 298px;
+    height: 54px;
+}
+
+.pets__arrow-right {
+    position: absolute;
+    top: 400px;
+    right: -82px;
+    @include arrow-btn;
+
+    &:active {
+        background: $green;
+    }
+}
+
+.pets__arrow-left {
+    @include arrow-btn;
+    position: absolute;
+    top: 400px;
+    left: -82px;
+
+    &:active {
+        background: $green;
+    }
+}
+
+.popup__button {
+    @include body;
+    width: 136px;
+    height: 31px;
+    border: 0px;
+    background: $gray_light;
+    border-radius: 5px;
+    color: $green;
+    cursor: pointer;
+    position: absolute;
+    left: 11px;
+    bottom: 15px;
+}
