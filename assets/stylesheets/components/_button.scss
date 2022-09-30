@@ -4,4 +4,13 @@
     background: $orange;
     border: 0;
     border-radius: 25px;
+
+    &:hover {
+        background: rgba(228, 114, 9, 1);
+        cursor: pointer;
+    }
+
+    &:active {
+        background: $green;
+    }
 }
