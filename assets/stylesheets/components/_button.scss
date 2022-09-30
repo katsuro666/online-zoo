@@ -1,0 +1,7 @@
+.button {
+    @include btn;
+    color: #ffff;
+    background: $orange;
+    border: 0;
+    border-radius: 25px;
+}

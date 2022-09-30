@@ -1,0 +1,51 @@
+.watch-online {
+    background-image: url(/assets/images/giant-panda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -60px;
+/// Картинка сдвинута на 60px выше, поэтому при расчете
+// следующей секции считай и это расстояние
+    background-color: rgba(40, 48, 53, 1); 
+    width: 100%;
+    height: 780px;
+    margin: 0;
+}
+
+.watch-online-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    & h2 {
+    position: relative;
+    margin-top: 86px;
+    font-weight: 700;
+    font-size: 106.5px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 500px;
+    color: #ffff;
+
+    & span {
+        color:$yellow;
+    }
+    }
+}
+
+.watch-online__button {
+    margin-right: 99px;
+    width: 298px;
+    height: 54px;
+}
+
+.watch-online__ellipse {
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    left: calc(50% - 465px/2 + 230px);
+    top: 92px;
+    background: $orange;
+    border-radius: 50%;
+
+}
