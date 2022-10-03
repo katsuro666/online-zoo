@@ -341,6 +341,10 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 
 html {
+  scroll-behavior: smooth;
+}
+
+html {
   font-family: "Roboto", sans-serif;
 }
 
@@ -824,6 +828,79 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  background: rgb(17, 17, 21);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.footer-socials__el {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer-socials__el:nth-child(4) {
+  margin-bottom: 0px;
+}
+
+.footer-socials__el-text {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin: 0;
+}
+.footer-socials__el-text:active {
+  color: rgb(75, 146, 0);
+}
+
+.footer-socials__el-logo {
+  margin-right: 12px;
+}
+.footer-socials__el-logo:active circle {
+  fill: #4B9200;
+  fill-opacity: 1;
+}
+
+.footer-logo {
+  margin: 0;
+}
+
+.footer__button {
+  margin: 68px auto 44px;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer-navigation__text {
+  color: rgb(255, 255, 255);
+}
+.footer-navigation__text:hover {
+  color: rgb(255, 255, 255);
+}
+.footer-navigation__text:active {
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.footer-navigation__el {
+  margin-right: 58px;
+}
+.footer-navigation__el:nth-child(4) {
+  margin-right: 0px;
+}
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -900,6 +977,12 @@ body {
 }
 
 .testimonials__button {
+  width: 298px;
+  height: 54px;
+  border-radius: 5px;
+}
+
+.footer__button button {
   width: 298px;
   height: 54px;
   border-radius: 5px;

@@ -1,3 +1,80 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer {
+  background: rgba(17, 17, 21, 1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content:space-between;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.footer-socials__el {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &:nth-child(4) {
+    margin-bottom: 0px;
+  }
+
+}
+
+.footer-socials__el-text {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin: 0;
+
+  &:active {
+    color: $green;
+  }
+}
+
+.footer-socials__el-logo {
+  margin-right: 12px;
+
+  &:active circle {
+    fill:#4B9200;
+    fill-opacity: 1;
+  }
+}
+
+.footer-logo {
+  margin: 0;
+}
+
+.footer__button {
+ margin: 68px auto 44px;
+}
+
+// NEXT SECTION - NAVIGATION
+
+.footer-navigation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;  
+}
+
+.footer-navigation__text {
+  color: rgba(255, 255, 255, 1);
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    background-clip: text!important;
+     -webkit-text-fill-color: transparent;
+     background: $orange;
+  }
+}
+
+.footer-navigation__el {
+  margin-right: 58px;
+
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
+}
