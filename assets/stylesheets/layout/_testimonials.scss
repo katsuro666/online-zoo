@@ -1,0 +1,123 @@
+.testimonials {
+  background: url(/assets/images/background_leaf.png) no-repeat right bottom -140px / auto 45%;
+  padding-top: 140px;
+  padding-bottom: 180px;
+}
+
+.testimonials-wrapper {
+
+    & h2 {
+      @include h3;
+      text-align: center;
+    }
+}
+
+.testimonials-container {
+  position: relative;
+  left: -10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 47px;
+}
+
+.testimonials-item {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  height: 391px;
+  background: $gray-light;
+  border-radius: 20px;
+}
+
+.testimonials-user {
+  display: flex;
+  outline-offset: -3px;
+}
+
+.testimonials-user__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 19px);
+  height: 59px;
+}
+
+.testimonials-user__pic {
+  margin: 11px 8px 0px 16px;
+}
+
+.testimonials-user__name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+  margin-top: 11px;
+}
+
+.testimonials-user__location {
+  @include smallParagraph;
+  color: #BDBDBD;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+.testimonials-user__time {
+  @include smallParagraph;
+  color: #BDBDBD;
+}
+
+.testimonials-content {
+  @include smallParagraph;
+  color: $gray;
+  margin: 0px 15px 19px 16px;
+  overflow-y: hidden;
+}
+
+.testimonials-item__border {
+  background: $pink_gradient;
+  padding: 2px;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.testimonials-scroll {
+  position: relative;
+  left: -10px;
+  width: 1160px;
+  margin-top: 21px;
+  margin-bottom: 31px;
+}
+
+.testimonials__slider {
+  margin: 0px 280px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 600px;
+  height: 6px;
+  background: rgba(245, 247, 246, 1);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 115px; 
+    height: 6px; 
+    background: rgba(254, 144, 19, 1);
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 115px;
+    height: 6px;
+    background: rgba(254, 144, 19, 1);
+    cursor: pointer;
+  }
+}
