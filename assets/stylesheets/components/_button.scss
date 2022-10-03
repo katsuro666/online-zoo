@@ -1,3 +1,5 @@
+// GLOBAL
+
 .button {
     @include btn;
     color: #ffff;
@@ -15,11 +17,15 @@
     }
 }
 
+// WATCH ONLINE
+
 .watch-online__button {
     margin-right: 99px;
     width: 298px;
     height: 54px;
 }
+
+// PETS
 
 .pets__button {
     transform: translate(-50%);
@@ -50,6 +56,8 @@
     }
 }
 
+// POPUP
+
 .popup__button {
     @include body;
     width: 136px;
@@ -64,6 +72,8 @@
     bottom: 15px;
 }
 
+//TESTIMONIALS
+
 .testimonials__button {
     width: 298px;
     height: 54px;
@@ -74,4 +84,29 @@
     width: 298px;
     height: 54px;
     border-radius: 5px;
+}
+
+// FOOTER
+
+.footer-subscription__button {
+    margin-left: 10px;
+    background: $gray_light;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: capitalize;
+    width: 129px;
+    height: 42px;
+    border-radius: 5px;
+    color: $red;
+    border: 1px solid #D31414;
+
+    &:hover {
+        background-color: $gray_light;
+    }
+
+    &:active {
+        color: $green;
+        border: 1px solid #4B9200;
+    }
 }

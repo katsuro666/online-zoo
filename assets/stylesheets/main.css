@@ -342,6 +342,7 @@ a:hover, a:active, a:focus, a:focus-within {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html {
@@ -901,6 +902,52 @@ body {
   margin-right: 0px;
 }
 
+.footer-other {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copyright {
+  margin-top: auto;
+  margin-left: auto;
+}
+.footer__copyright p {
+  margin: 10px 0px 0px auto;
+  color: rgb(171, 171, 171);
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.footer-subscription p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: rgb(255, 255, 255);
+  margin: 0 0 14px;
+}
+
+.footer-subscription__form {
+  display: flex;
+}
+.footer-subscription__form input {
+  background: rgb(17, 17, 21);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #BDBDBD;
+  padding: 10px;
+  width: 228px;
+  border: 0;
+}
+
+.subscription__form-border {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  width: 229.5px;
+  padding: 0.7px;
+  border-radius: 2px;
+}
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -986,6 +1033,27 @@ body {
   width: 298px;
   height: 54px;
   border-radius: 5px;
+}
+
+.footer-subscription__button {
+  margin-left: 10px;
+  background: rgb(241, 243, 242);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: capitalize;
+  width: 129px;
+  height: 42px;
+  border-radius: 5px;
+  color: rgb(211, 20, 20);
+  border: 1px solid #D31414;
+}
+.footer-subscription__button:hover {
+  background-color: rgb(241, 243, 242);
+}
+.footer-subscription__button:active {
+  color: rgb(75, 146, 0);
+  border: 1px solid #4B9200;
 }
 
 .pets_popup_container {

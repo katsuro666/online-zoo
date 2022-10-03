@@ -824,7 +824,13 @@
             <p>Subscribe to our news</p>
 
             <form class="footer-subscription__form">
-              <input type="email" value="Enter your email" />
+              <div class="subscription__form-border">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  pattern="a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+                  required />
+              </div>
               <button type="submit" class="button footer-subscription__button">
                 Submit
               </button>

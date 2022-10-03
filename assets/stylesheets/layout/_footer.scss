@@ -78,3 +78,51 @@
     margin-right: 0px;
   }
 }
+
+// NEXT SECTION - SUBSCRIPTION & COPYRIGHT
+
+.footer-other {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copyright {
+  margin-top: auto;
+  margin-left: auto;
+
+  & p {
+    margin: 10px 0px 0px auto;
+    color: $gray_smoky;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+.footer-subscription p {
+  @include subtitle;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 0 14px; ;
+}
+
+.footer-subscription__form {
+  display: flex;
+
+  & input {
+    background: rgba(17, 17, 21, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    padding: 10px;
+    width: 228px;
+    border: 0;
+  }
+}
+
+.subscription__form-border {
+  background: $orange;
+  width: 229.5px;
+  padding: 0.7px;
+  border-radius: 2px;
+}
