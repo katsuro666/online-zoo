@@ -428,7 +428,7 @@
     </section>
 
     <section class="pick-and-feed">
-      <div class="info-field">
+      <div class="info-field container">
         <div class="info-field__text">
           <h2 class="info-field__text_title">Pick and feed a friend</h2>
           <p class="info-field__text_subtitle">
@@ -452,19 +452,15 @@
 
         <div class="pick-and-feed__container">
           <div class="container__item">
-            <img
-              class="item__square"
-              src="/assets/icons/white-square.png"
-              alt=""
-              width="168px"
-              height="168px" />
+            <div class="item__square">
+              <img class="item__icon-pay" src="/assets/icons/pay.svg" alt="" />
+            </div>
 
             <p>Pay with card</p>
-
-            <img src="/assets/icons/pay.svg" alt="" />
           </div>
 
           <svg
+            class="pick-and-feed__arrow"
             width="71"
             height="37"
             fill="none"
@@ -477,18 +473,14 @@
           </svg>
 
           <div class="container__item">
-            <img
-              class="item__square"
-              src="/assets/icons/white-square.png"
-              alt=""
-              width="168px"
-              height="168px" />
-
+            <div class="item__square">
+              <img class="item__icon-zoo" src="/assets/icons/zoo.svg" alt="" />
+            </div>
             <p>Payment goes to the zoo</p>
-
-            <img src="/assets/icons/zoo.svg" alt="" />
           </div>
+
           <svg
+            class="pick-and-feed__arrow"
             width="71"
             height="37"
             fill="none"
@@ -501,21 +493,19 @@
           </svg>
 
           <div class="container__item">
-            <img
-              class="item__square"
-              src="/assets/icons/white-square.png"
-              alt=""
-              width="168px"
-              height="168px" />
+            <div class="item__square">
+              <img
+                class="item__icon-anml"
+                src="/assets/icons/monkey.svg"
+                alt="" />
+            </div>
 
             <p>Your favorite animal gets delicious dish</p>
-
-            <img src="/assets/icons/monkey.svg" alt="" />
           </div>
         </div>
 
-        <form action="/pages/donate/index.html" target="_blank">
-          <button class="button pick-and-feed__button">
+        <form class="pick-and-feed__button" action="/pages/donate/index.html" target="_blank">
+          <button class="button">
             Feed a friend now
           </button>
         </form>
