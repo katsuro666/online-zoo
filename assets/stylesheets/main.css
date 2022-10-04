@@ -1082,4 +1082,10 @@ body {
   padding: 0;
   position: absolute;
   top: 30px;
+}
+
+.watch-online_donate {
+  background-image: url(/assets/images/giant-panda_donate.jpg);
+  height: 390px;
+  background-position: 0;
 }/*# sourceMappingURL=main.css.map */
