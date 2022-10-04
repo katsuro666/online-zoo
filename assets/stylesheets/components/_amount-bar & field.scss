@@ -1,0 +1,278 @@
+/// AMOUNT BAR
+
+.donation-block-header {
+  margin: 48px auto 17px 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.radio-wrapper {
+  display: flex;  //////
+  flex-direction: row; /// ??? delete
+}
+
+.radio-buttons {
+  position: relative;
+  background: rgba(64, 73, 80, 1);
+  border-radius: 2px;
+  width: 976px;
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+   & input[type=radio] {
+    display: none;
+  }
+   & label {
+    cursor: pointer;    
+  }
+  
+  .slider {
+    position: absolute;
+    top: -7px;
+    width: 0px;
+    height: 0px;
+    transition: all .4s ease;
+  }
+
+  .bckgrnd-line {
+    width: 915px;
+    height: 2px;
+    background: #72828E;
+    margin-left: 31px;
+  }
+
+  /// YELLOW POINTS POSITION ON THE BAR
+
+  .first-point {
+    @include amount-point;
+    left: 26px;
+  }
+
+  .second-point {
+    @include amount-point;
+    left: 156px;
+  }
+
+  .third-point {
+    @include amount-point;
+    left: 286px;
+  }
+
+  .fourth-point {
+    @include amount-point;
+    left: 416px;
+  }
+
+  .fifth-point {
+    @include amount-point;
+    left: 546px;
+  }
+
+  .sixth-point {
+    @include amount-point;
+    left: 676px;
+  }
+
+  .seventh-point {
+    @include amount-point;
+    left: 806px;
+  }
+
+  .eighth-point {
+    @include amount-point;
+    left: 936px;
+  }
+
+  /// SLIDER POSITION
+  
+  .first-pos {
+    &:checked ~ .slider {
+      left: 11px;
+      }
+  }
+  
+  .second-pos {
+    &:checked ~ .slider {
+      left: 141px;
+    }
+  }
+  
+  .third-pos {
+    &:checked ~ .slider {
+      left: 271px;
+    }
+  }
+  
+  .fourth-pos {
+    &:checked ~ .slider {
+      left: 401px;
+    }
+  }
+  
+  .fifth-pos {
+    &:checked ~ .slider {
+      left: 531px;
+    }
+  }
+  
+  .sixth-pos {
+    &:checked ~ .slider {
+      left: 661px;
+    }
+  }
+  
+  .seventh-pos {
+    &:checked ~ .slider {
+      left: 791px;
+    }
+  }
+  
+  .eighth-pos {
+    &:checked ~ .slider {
+      left: 921px;
+    }
+  }
+}
+
+
+/// SECTIONS - TRANSPARENT BLOCKS FOR BETTER POINT AIMING
+
+// -15px 
+
+.first-sec {
+  @include amount-section;
+  left: 11px;
+}
+
+.second-sec {
+  @include amount-section;
+  left: 141px;
+}
+
+.third-sec {
+  @include amount-section;
+  left: 271px;
+}
+
+.fourth-sec {
+  @include amount-section;
+  left: 401px;
+}
+
+.fifth-sec {
+  @include amount-section;
+  left: 531px;
+}
+
+.sixth-sec {
+  @include amount-section;
+  left: 661px;
+}
+
+.seventh-sec {
+  @include amount-section;
+  left: 791px;
+}
+
+.eighth-sec {
+  @include amount-section;
+  left: 921px;
+}
+
+/// AMOUNT NUMBERS
+
+.donation-amount {
+  position: relative;
+  outline: 5px solid aqua;
+  height: 36px;
+  margin: 12px auto 50px;
+}
+
+.donation-amount__number {
+  margin: 0;
+  position: absolute;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+
+  &:nth-child(2) {
+    left: 130px;
+  }
+
+  &:nth-child(3) {
+    left: 260px;
+  }
+
+  &:nth-child(4) {
+    left: 390px;
+  }
+
+  &:nth-child(5) {
+    left: 520px;
+  }
+
+  &:nth-child(6) {
+    left: 650px;
+  }
+
+  &:nth-child(7) {
+    left: 780px;
+  }
+
+  &:nth-child(8) {
+    left: 910px;
+  }
+}
+
+/// ANOTHER AMOUNT FIELD
+
+.input-amount label {
+	position: relative;
+	display: block;
+	input {
+		display: block;
+		padding: 16px 9px;
+		width: 268px;
+	  margin-bottom: 25px;
+		transition: all 0.2s ease-in-out;
+		background-color: transparent;
+    border: 1px solid #929699;
+    border-radius: 2px;
+		font-weight: bold;
+		color: #333B41;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+    &::placeholder {
+      transition: all 0.2s ease-in-out;
+      color: #929699;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    &:focus, &.populated {
+      padding: 20px 13px;
+        &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+}
+
+.kaka::-webkit-outer-spin-button,
+.kaka::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+

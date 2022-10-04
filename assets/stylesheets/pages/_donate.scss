@@ -5,3 +5,93 @@
   height: 390px;
   background-position: 0;
 }
+
+// DONATION INFORMATION
+
+.pick-and-feed_donate {
+  padding: 0;
+}
+
+.donation-info {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.donation-info__header {
+  margin: 0;
+  @include h3;
+  width: 1156px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.donation-info__content {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.donation-info__notice {
+  margin: 0;
+  @include h3;
+  color: rgba(254, 144, 19, 1);
+}
+
+// PICK AND FEED SECTION
+
+.info-field__inner {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.info-field__inner-header {
+  @include h2;
+  color: rgba(254, 144, 19, 1);
+  margin: 40px auto 20px auto;
+  text-align: center;
+}
+
+.info-field__inner-content {
+  @include subtitle;
+  margin: 0 auto 60px auto;
+}
+
+.animal-diet {
+  display: flex;
+  justify-content: center;
+}
+
+.animal-diet__perday {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.animal-diet__perday_number {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: auto 0 11px 0;
+}
+
+.animal-diet__perday_text {
+  margin: 0 0 17px 0;
+  text-align: center;
+}
+
+.animal-diet__x {
+  width: 14px;
+  height: 14px;
+  margin-top: 163px;
+}
+
+.animal-diet__icon {
+  margin: 0;
+}
