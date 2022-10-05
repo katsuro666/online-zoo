@@ -9,15 +9,31 @@
   padding-bottom: 50px;
 }
 
-.footer-socials__el {
-  display: flex;
+.footer-socials__el-wrapper {
+  cursor: pointer;
+  width: fit-content;
   align-items: center;
   margin-bottom: 10px;
 
   &:nth-child(4) {
     margin-bottom: 0px;
   }
+}
 
+.footer-socials__el {
+  outline-offset: 3px;
+  display: flex;
+
+  &:active {
+    svg circle {
+      fill: $green;
+      fill-opacity: 1;
+    }
+
+    .footer-socials__el-text {
+      color: $green;
+    }
+  }
 }
 
 .footer-socials__el-text {
@@ -27,18 +43,13 @@
   line-height: 140%;
   margin: 0;
 
-  &:active {
-    color: $green;
-  }
+  
 }
 
 .footer-socials__el-logo {
   margin-right: 12px;
 
-  &:active circle {
-    fill:#4B9200;
-    fill-opacity: 1;
-  }
+  
 }
 
 .footer-logo {

@@ -188,7 +188,6 @@
 
 .donation-amount {
   position: relative;
-  outline: 5px solid aqua;
   height: 36px;
   margin: 12px auto 50px;
 }
@@ -261,7 +260,7 @@
     }
 
     &:focus, &.populated {
-      padding: 20px 13px;
+      padding: 18px 13px;
         &::placeholder {
         color: transparent;
       }
@@ -269,10 +268,45 @@
   }
 }
 
-.kaka::-webkit-outer-spin-button,
-.kaka::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.input-currency {
+  position: absolute;
+  top: 17px;
+  left: 248px;
 }
 
+/// PICK FREQUENCY RADIO
 
+
+.pick-radio {
+  margin: 0;
+  input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    + .pick-radio-label {
+      &:before {
+        content: '';
+        background: transparent;
+        border-radius: 100%;
+        border: 1px solid rgba(254, 144, 19, 1);
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+      }
+    }
+    &:checked {
+      + .pick-radio-label {
+        &:before {
+          background-color: $green;
+          border: 1px solid $green;
+        }
+      }
+    }
+  }
+}

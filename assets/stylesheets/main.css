@@ -840,13 +840,28 @@ body {
   padding-bottom: 50px;
 }
 
-.footer-socials__el {
-  display: flex;
+.footer-socials__el-wrapper {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   align-items: center;
   margin-bottom: 10px;
 }
-.footer-socials__el:nth-child(4) {
+.footer-socials__el-wrapper:nth-child(4) {
   margin-bottom: 0px;
+}
+
+.footer-socials__el {
+  outline-offset: 3px;
+  display: flex;
+}
+.footer-socials__el:active svg circle {
+  fill: rgb(75, 146, 0);
+  fill-opacity: 1;
+}
+.footer-socials__el:active .footer-socials__el-text {
+  color: rgb(75, 146, 0);
 }
 
 .footer-socials__el-text {
@@ -856,16 +871,9 @@ body {
   line-height: 140%;
   margin: 0;
 }
-.footer-socials__el-text:active {
-  color: rgb(75, 146, 0);
-}
 
 .footer-socials__el-logo {
   margin-right: 12px;
-}
-.footer-socials__el-logo:active circle {
-  fill: #4B9200;
-  fill-opacity: 1;
 }
 
 .footer-logo {
@@ -1306,7 +1314,6 @@ body {
 
 .donation-amount {
   position: relative;
-  outline: 5px solid aqua;
   height: 36px;
   margin: 12px auto 50px;
 }
@@ -1384,7 +1391,7 @@ body {
   line-height: 140%;
 }
 .input-amount label input:focus, .input-amount label input.populated {
-  padding: 20px 13px;
+  padding: 18px 13px;
 }
 .input-amount label input:focus::-moz-placeholder, .input-amount label input.populated::-moz-placeholder {
   color: transparent;
@@ -1396,10 +1403,38 @@ body {
   color: transparent;
 }
 
-.kaka::-webkit-outer-spin-button,
-.kaka::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.input-currency {
+  position: absolute;
+  top: 17px;
+  left: 248px;
+}
+
+.pick-radio {
   margin: 0;
+}
+.pick-radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.pick-radio input[type=radio] + .pick-radio-label:before {
+  content: "";
+  background: transparent;
+  border-radius: 100%;
+  border: 1px solid rgb(254, 144, 19);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.pick-radio input[type=radio]:checked + .pick-radio-label:before {
+  background-color: rgb(75, 146, 0);
+  border: 1px solid rgb(75, 146, 0);
 }
 
 .watch-online_donate {
@@ -1499,5 +1534,26 @@ body {
 }
 
 .animal-diet__icon {
+  margin: 0;
+}
+
+.amount-form {
+  margin-left: 354px;
+}
+
+.pick-frequency {
+  margin-left: 382px;
+}
+.pick-frequency label {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.pick-and-feed__button {
+  margin: 31px auto 30px 342px;
+}
+
+.donation-notice {
+  text-align: center;
   margin: 0;
 }/*# sourceMappingURL=main.css.map */

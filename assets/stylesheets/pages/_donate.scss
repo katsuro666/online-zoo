@@ -95,3 +95,27 @@
 .animal-diet__icon {
   margin: 0;
 }
+
+////// AMOUNT FORM ETC
+
+.amount-form {
+  margin-left: 354px;
+}
+
+.pick-frequency {
+  margin-left: 382px;
+
+  & label {
+    margin-right: 50px;
+    cursor: pointer;
+  }
+}
+
+.pick-and-feed__button {
+  margin: 31px auto 30px 342px;
+}
+
+.donation-notice {
+  text-align: center;
+  margin: 0;
+}
