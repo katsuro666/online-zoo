@@ -451,7 +451,7 @@ body {
 }
 
 .watch-online {
-  background-image: url(/assets/images/giant-panda.jpg);
+  background-image: url(../../assets/images/giant-panda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -60px;
@@ -492,7 +492,7 @@ body {
 
 .the-backstage {
   padding-top: 80px;
-  background: url(/assets/images/background-flower.png) no-repeat right top 12px/auto 100%;
+  background: url(../../assets/images/background-flower.png) no-repeat right top 12px/auto 100%;
 }
 .the-backstage-inner {
   display: flex;
@@ -533,7 +533,7 @@ body {
 
 .pets {
   margin-top: 180px;
-  background: url(/assets/images/background-palm.png) no-repeat left bottom 0px/auto 40%, url(/assets/images/background-strelitzia.png) no-repeat right bottom 0px/auto 25%;
+  background: url(../../assets/images/background-palm.png) no-repeat left bottom 0px/auto 40%, url(../../assets/images/background-strelitzia.png) no-repeat right bottom 0px/auto 25%;
 }
 
 .pets-inner {
@@ -692,7 +692,7 @@ body {
 .item__square {
   width: 168px;
   height: 168px;
-  background: url(/assets/icons/white-square.png);
+  background: url(../../assets/icons/white-square.png);
 }
 
 .pick-and-feed__button {
@@ -704,7 +704,7 @@ body {
 }
 
 .testimonials {
-  background: url(/assets/images/background_leaf.png) no-repeat right bottom -140px/auto 45%;
+  background: url(../../assets/images/background_leaf.png) no-repeat right bottom -140px/auto 45%;
   padding-top: 140px;
   padding-bottom: 180px;
 }
@@ -1447,7 +1447,7 @@ body {
 }
 
 .watch-online_donate {
-  background-image: url(/assets/images/giant-panda_donate.jpg);
+  background-image: url(../../assets/images/giant-panda_donate.jpg);
   height: 390px;
   background-position: 0;
 }
