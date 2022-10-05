@@ -558,14 +558,13 @@ body {
 
 .pets-container__item-picture:hover {
   position: relative;
-  transform: scale(1.027);
-  transition: transform 500ms;
 }
 
 .pets-container__item-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ffffff;
 }
 .pets-container__item-info img {
   margin: auto;
@@ -591,10 +590,11 @@ body {
   margin: auto;
 }
 
-/* .pets_inner-container:hover + div {
-    display: block;
-} */
 .pets-container__item:hover .pets_popup_container {
+  display: block;
+}
+
+.pets-container__item:hover .pets-popup-mask {
   display: block;
 }
 
@@ -1092,6 +1092,15 @@ body {
   top: 30px;
 }
 
+.pets-popup-mask {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .donation-block-header {
   margin: 48px auto 17px 4px;
   font-weight: 400;
@@ -1549,7 +1558,7 @@ body {
   cursor: pointer;
 }
 
-.pick-and-feed__button {
+.pick-and-feed__button_donate {
   margin: 31px auto 30px 342px;
 }
 

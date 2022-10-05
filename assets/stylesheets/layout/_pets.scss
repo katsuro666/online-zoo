@@ -26,14 +26,15 @@
 
 .pets-container__item-picture:hover {
     position: relative;
-    transform: scale(1.027);
-    transition: transform 500ms;
+    // transform: scale(1.027);
+    // transition: transform 500ms ease-in-out;
 }
 
 .pets-container__item-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #ffffff;
 
     & img {
         margin: auto;
@@ -55,10 +56,10 @@
     margin: auto;
 }
 
-/* .pets_inner-container:hover + div {
-    display: block;
-} */
-
 .pets-container__item:hover .pets_popup_container {
+    display: block; 
+}
+
+.pets-container__item:hover .pets-popup-mask {
     display: block;
 }
