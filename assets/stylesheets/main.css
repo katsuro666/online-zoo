@@ -374,9 +374,23 @@ body {
 .container {
   max-width: 1160px; /* 1 */
   margin: 0 auto; /* 2 */
-  padding-left: 10px; /* 3 */
-  padding-right: 10px; /* 3 */
   width: 100%; /* 1 */
+  outline: 3px solid red;
+}
+@media (max-width: 1366px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 414px) {
+  .container {
+    max-width: 300px;
+  }
 }
 
 /**
@@ -410,6 +424,8 @@ body {
 .header {
   background-color: #000000;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .inner-header {
@@ -418,9 +434,27 @@ body {
 .inner-header nav {
   display: flex;
 }
+@media (max-width: 768px) {
+  .inner-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .header-logo {
+  background-image: url(/assets/icons/petstory-logo.png);
+  background-repeat: no-repeat;
+  width: 82px;
+  height: 52px;
   margin: 14px 34px 14px 0px;
+}
+@media (max-width: 768px) {
+  .header-logo {
+    margin: 2px auto;
+    width: 47px;
+    height: 29px;
+    background-image: url(../../assets/icons/petstory-logo_tablet.svg);
+  }
 }
 
 .header-item {
@@ -442,6 +476,16 @@ body {
 .header-item-last {
   margin-left: auto;
 }
+@media (max-width: 1366px) {
+  .header-item {
+    padding: 29px 24px;
+  }
+}
+@media (max-width: 768px) {
+  .header-item {
+    display: none;
+  }
+}
 
 .current-item {
   -webkit-background-clip: text !important;
@@ -458,6 +502,27 @@ body {
   width: 100%;
   height: 780px;
   margin: 0;
+}
+@media (max-width: 1366px) {
+  .watch-online {
+    background-image: url(/../../assets/images/giant-panda_laptop.jpg);
+    height: 584px;
+    background-position: 0px -83px;
+  }
+}
+@media (max-width: 768px) {
+  .watch-online {
+    background-image: url(/../../assets/images/giant-panda_tablet.jpg);
+    height: 373px;
+    background-position: 0px -30px;
+  }
+}
+@media (max-width: 414px) {
+  .watch-online {
+    background-image: url(/../../assets/images/giant-panda_mobile.jpg);
+    height: 187px;
+    background-position: 0px 0px;
+  }
 }
 
 .watch-online-container {
@@ -479,6 +544,28 @@ body {
 .watch-online-container h2 span {
   color: rgb(255, 238, 46);
 }
+@media (max-width: 1366px) {
+  .watch-online-container h2 {
+    z-index: 2;
+    margin: 43px 56px 40px auto;
+    font-size: 85px;
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .watch-online-container h2 {
+    margin: 48px 0px 0px auto;
+    font-size: 54px;
+    width: 256px;
+  }
+}
+@media (max-width: 414px) {
+  .watch-online-container h2 {
+    font-size: 28px;
+    width: 128px;
+    margin: 41px 0 43px auto;
+  }
+}
 
 .watch-online__ellipse {
   position: absolute;
@@ -488,6 +575,31 @@ body {
   top: 92px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 50%;
+}
+@media (max-width: 1366px) {
+  .watch-online__ellipse {
+    width: 367px;
+    height: 367px;
+    left: calc(50% - 183.5px + 139.5px);
+    top: 69px;
+    z-index: 1;
+  }
+}
+@media (max-width: 768px) {
+  .watch-online__ellipse {
+    width: 237.6px;
+    height: 237.6px;
+    left: calc(50% - 118.8px + 130.44px);
+    top: 44.23px;
+  }
+}
+@media (max-width: 414px) {
+  .watch-online__ellipse {
+    width: 119px;
+    height: 119px;
+    left: calc(50% - 59.545px + 62.45px);
+    top: 52.17px;
+  }
 }
 
 .the-backstage {
@@ -979,6 +1091,23 @@ body {
   width: 298px;
   height: 54px;
 }
+@media (max-width: 1366px) {
+  .watch-online__button {
+    margin-bottom: 47px;
+  }
+}
+@media (max-width: 768px) {
+  .watch-online__button {
+    margin-bottom: 40px;
+    margin-left: 0;
+    align-self: baseline;
+  }
+}
+@media (max-width: 414px) {
+  .watch-online__button {
+    margin: 20px auto 0 auto;
+  }
+}
 
 .pets__button {
   transform: translate(-50%);
@@ -1041,6 +1170,11 @@ body {
   width: 298px;
   height: 54px;
   border-radius: 5px;
+}
+
+.feed-button {
+  width: 298px;
+  height: 54px;
 }
 
 .footer-subscription__button {
@@ -1444,6 +1578,47 @@ body {
 .pick-radio input[type=radio]:checked + .pick-radio-label:before {
   background-color: rgb(75, 146, 0);
   border: 1px solid rgb(75, 146, 0);
+}
+
+.hamburger-line, .hamburger::after, .hamburger::before {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.hamburger {
+  display: none;
+  width: 18px;
+  height: 10px;
+  position: relative;
+  background-color: rgb(118, 116, 116);
+}
+.hamburger::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+@media (max-width: 414px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.hamburger-line {
+  top: calc(50% - 1px);
 }
 
 .watch-online_donate {

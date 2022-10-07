@@ -20,9 +20,29 @@
 .container {
   max-width: 1160px; /* 1 */
   margin: 0 auto; /* 2 */
-  padding-left: 10px; /* 3 */
-  padding-right: 10px; /* 3 */
+  // padding-left: 10px; /* 3 */
+  // padding-right: 10px; /* 3 */
   width: 100%; /* 1 */
+  outline: 3px solid red;
+  // outline-offset: -3px;
+
+  @include media-laptop {
+    max-width: 940px;
+    
+    // padding-left: 30px;
+    // padding-right: 30px;
+  }
+
+  @include media-tablet {
+    max-width: 600px;
+    // padding-left: 20px;
+    // padding-right: 0px;
+  }
+  
+
+  @include media-mobile {
+    max-width: 300px;
+  }
 }
 
 /**

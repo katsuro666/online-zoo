@@ -23,6 +23,20 @@
     margin-right: 99px;
     width: 298px;
     height: 54px;
+
+    @include media-laptop {
+        margin-bottom: 47px;
+    }
+
+    @include media-tablet {
+        margin-bottom: 40px;
+        margin-left: 0;
+        align-self: baseline;
+    }
+    
+    @include media-mobile {
+        margin: 20px auto 0 auto;
+    }
 }
 
 // PETS
@@ -84,6 +98,13 @@
     width: 298px;
     height: 54px;
     border-radius: 5px;
+}
+
+// DONATE PAGE 
+
+.feed-button {
+    width: 298px;
+    height: 54px;
 }
 
 // FOOTER
