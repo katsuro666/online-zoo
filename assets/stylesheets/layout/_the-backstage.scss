@@ -1,39 +1,94 @@
 .the-backstage {
-    padding-top: 80px;
-    background: url(../../assets/images/background-flower.png) no-repeat right top 12px / auto 100%;
+  padding-top: 80px;
+  background: url(../../assets/images/background-flower.png) no-repeat right top 12px / auto 100%;
 
-    &-inner {
-        display: flex;
-        justify-content: space-between;
-        width: 1560px;
-    }
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1560px;
+  }
+
+  @include media-laptop {
+    padding-top: 17px;
+    background: none;
+  }
+
+  @include media-tablet {
+    padding: 30px 0;
+    background: url(../../assets/images/background-flower_tablet.png) no-repeat right top -30px;
+    outline: 3px solid blue;
+  }
+  
+  @include media-mobile {
+    padding: 105px 0;
+    background: url(../../assets/images/background-flower_mobile.png) no-repeat right top 38px;
+
+  }
+}
+
+.the-backstage__img {
+  @include media-laptop {
+   content: url(../../assets/images/bamboo-cap_laptop.jpg);
+  }
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .the-backstage__info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 78px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 78px;
 
-    & h2 {
-        @include h2;
-        margin: 0;
-        padding: 0;
-    }
+  @include media-laptop {
+    margin-left: 31px;
+  }
 
-    & p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 130%;
-    }
+  @include media-tablet {
+    margin: 0;
+    width: 495px;
+  }
 
-    & h3 {
-        @include subtitle;
-        
+  @include media-mobile {
+    width: 300px;
+  }
+
+  & h2 {
+    @include h2;
+      margin: 0;
+      padding: 0;
+
+    @include media-mobile {
+      font-size: 24px;
     }
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  & h3 {
+    @include subtitle;   
+  }
 }
 
 .info__content {
-    @include body;
-    margin: 0;
-    padding: 0;
+  @include body;
+  margin: 0;
+  padding: 0;
+
+  @include media-laptop {
+    width: 454px;
+  }
+
+  @include media-tablet {
+    width: 495px;
+  }
+
+  @include media-mobile {
+    width: 300px;
+  }
 }

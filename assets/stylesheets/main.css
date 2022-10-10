@@ -611,11 +611,57 @@ body {
   justify-content: space-between;
   width: 1560px;
 }
+@media (max-width: 1366px) {
+  .the-backstage {
+    padding-top: 17px;
+    background: none;
+  }
+}
+@media (max-width: 768px) {
+  .the-backstage {
+    padding: 30px 0;
+    background: url(../../assets/images/background-flower_tablet.png) no-repeat right top -30px;
+    outline: 3px solid blue;
+  }
+}
+@media (max-width: 414px) {
+  .the-backstage {
+    padding: 105px 0;
+    background: url(../../assets/images/background-flower_mobile.png) no-repeat right top 38px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .the-backstage__img {
+    content: url(../../assets/images/bamboo-cap_laptop.jpg);
+  }
+}
+@media (max-width: 768px) {
+  .the-backstage__img {
+    display: none;
+  }
+}
 
 .the-backstage__info {
   display: flex;
   flex-direction: column;
   margin-left: 78px;
+}
+@media (max-width: 1366px) {
+  .the-backstage__info {
+    margin-left: 31px;
+  }
+}
+@media (max-width: 768px) {
+  .the-backstage__info {
+    margin: 0;
+    width: 495px;
+  }
+}
+@media (max-width: 414px) {
+  .the-backstage__info {
+    width: 300px;
+  }
 }
 .the-backstage__info h2 {
   font-weight: 400;
@@ -623,6 +669,11 @@ body {
   line-height: 120%;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 414px) {
+  .the-backstage__info h2 {
+    font-size: 24px;
+  }
 }
 .the-backstage__info p {
   font-weight: 400;
@@ -641,6 +692,21 @@ body {
   line-height: 140%;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 1366px) {
+  .info__content {
+    width: 454px;
+  }
+}
+@media (max-width: 768px) {
+  .info__content {
+    width: 495px;
+  }
+}
+@media (max-width: 414px) {
+  .info__content {
+    width: 300px;
+  }
 }
 
 .pets {
