@@ -70,6 +70,9 @@
 }
 
 .pets-container__item-picture {
+  width: 366px;
+  height: 366px;
+
   @include media-laptop {
     width: 294px;
     height: 294px;
@@ -77,7 +80,8 @@
 
   @include media-tablet {
     width: 285px;
-  } height: 285px;
+    height: 285px;
+  }
 }
 
 .pets-container__item-picture:hover {
