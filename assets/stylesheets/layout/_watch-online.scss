@@ -8,19 +8,16 @@
   margin: 0;
   
   @include media-laptop {
-    background-image: url(/../../assets/images/giant-panda_laptop.jpg);
     height: 584px;
     background-position: 0px -83px;
   }
 
   @include media-tablet {
-    background-image: url(/../../assets/images/giant-panda_tablet.jpg);
     height: 373px;
     background-position: 0px -30px;
   }
 
   @include media-mobile {
-    background-image: url(/../../assets/images/giant-panda_mobile.jpg);
     height: 187px;
     background-position: 0px 0px;
   }

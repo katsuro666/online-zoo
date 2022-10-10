@@ -43,9 +43,21 @@
 
 .pets__button {
     transform: translate(-50%);
-    margin: 80px 50% 100px 50%;
+    margin: 0 50% 100px 50%;
     width: 298px;
     height: 54px;
+
+    @include media-laptop {
+        margin-bottom: 140px; 
+    }
+
+    @include media-tablet {
+        margin-bottom: 100px;
+    }
+
+    @include media-mobile {
+        margin-bottom: 60px;
+    }
 }
 
 .pets__arrow-right {
@@ -57,6 +69,19 @@
     &:active {
         background: $green;
     }
+
+    @include media-laptop {
+        left: 556px;
+        top: 394px;
+    }
+    
+    @include media-tablet {
+        left: 315px;
+    }
+
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .pets__arrow-left {
@@ -67,6 +92,19 @@
 
     &:active {
         background: $green;
+    }
+
+    @include media-laptop {
+        left: 323px;
+        top: 394px;
+    }
+
+    @include media-tablet {
+        left: 223px;
+    }
+
+    @include media-mobile {
+        display: none;
     }
 }
 
