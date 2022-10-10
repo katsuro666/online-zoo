@@ -7,6 +7,8 @@
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /**
@@ -34,7 +36,8 @@ a {
   }
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
+// @include media-tablet {
+//   html {
+//     overflow-x: hidden;
+//   }
+// }

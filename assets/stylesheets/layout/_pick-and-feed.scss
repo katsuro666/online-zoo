@@ -178,9 +178,9 @@
 }
 
 .pick-and-feed__arrow_tablet {
-  display: none;
-
   &-first {
+    display: none;
+
     @include media-tablet {
       display: block;
       position: absolute;
@@ -197,6 +197,8 @@
   }
 
   &-second {
+    display: none;
+    
     @include media-tablet {
       display: inline-block;
       position: absolute;

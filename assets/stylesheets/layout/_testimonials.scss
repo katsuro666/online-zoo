@@ -2,6 +2,25 @@
   background: url(../../assets/images/background_leaf.png) no-repeat right bottom -140px / auto 45%;
   padding-top: 140px;
   padding-bottom: 180px;
+
+  @include media-laptop {
+    background: url(../../assets/images/background_leaf_laptop.png) no-repeat right bottom -85px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+
+  @include media-tablet {
+    background: url(../../assets/images/background_leaf_tablet.png) no-repeat right bottom -65px;
+    padding-top: 60px;
+    padding-bottom: 82px;
+  }
+
+  @include media-mobile {
+    background: url(../../assets/images/background_leaf_mobile.png) no-repeat right bottom -30px;
+
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
 }
 
 .testimonials-wrapper {
@@ -9,15 +28,32 @@
     & h2 {
       @include h3;
       text-align: center;
+
+      @include media-laptop {
+        margin: 0;
+      }
     }
 }
 
 .testimonials-container {
   position: relative;
-  left: -10px;
   display: flex;
   justify-content: space-between;
   margin-top: 47px;
+
+  @include media-laptop {
+    margin-top: 30px;
+  }
+
+  @include media-tablet {
+    flex-direction: column;
+    height: 372px;
+    overflow: hidden;
+  }
+
+  @include media-mobile {
+    margin-top: 20px;
+  }
 }
 
 .testimonials-item {
@@ -27,6 +63,15 @@
   height: 391px;
   background: $gray-light;
   border-radius: 20px;
+
+  @include media-laptop {
+    width: 293px;
+  }
+
+  @include media-tablet {
+    width: 100%;
+    height: 110px;
+  }
 }
 
 .testimonials-user {
@@ -72,13 +117,21 @@
   color: $gray;
   margin: 0px 15px 19px 16px;
   overflow-y: hidden;
+  
+  @include media-tablet {
+    margin-bottom: 12px;
+  }
 }
 
 .testimonials-item__border {
   background: $pink_gradient;
   padding: 2px;
   border-radius: 20px;
-  margin-right: 30px;
+  margin-right: 25px;
+
+  @include media-tablet {
+    margin: 0 0 15px 0;
+  }
 }
 
 .testimonials-scroll {
@@ -87,6 +140,14 @@
   width: 1160px;
   margin-top: 21px;
   margin-bottom: 31px;
+
+  @include media-laptop {
+    margin: 20px auto 52px;
+  }
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .testimonials__slider {
@@ -119,5 +180,10 @@
     height: 6px;
     background: rgba(254, 144, 19, 1);
     cursor: pointer;
+  }
+
+  @include media-laptop {
+    margin-left: 300px;
+    width: 390px;
   }
 }
