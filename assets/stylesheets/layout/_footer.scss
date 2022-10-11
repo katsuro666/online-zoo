@@ -93,14 +93,14 @@
 
 .footer-logo {
   @include media-laptop {
-  background-image: url(/assets/icons/petstory-logo.png);
+  background-image: url(../icons/petstory-logo.png);
   width: 82px;
   height: 52px;
   margin-right: 390px;
   }
 
   @include media-mobile {
-    background-image: url(/assets/icons/petstory-logo_mobile.png);
+    background-image: url(../icons/petstory-logo_mobile.png);
     width: 128px;
     height: 23px;
     margin: 0 auto 30px auto;
