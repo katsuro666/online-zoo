@@ -2216,8 +2216,27 @@ body {
 
 .watch-online_donate {
   background-image: url(../../assets/images/giant-panda_donate.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 390px;
-  background-position: 0;
+  background-position-y: 0;
+}
+@media (max-width: 1366px) {
+  .watch-online_donate {
+    background-position-x: -170px;
+  }
+}
+@media (max-width: 960px) {
+  .watch-online_donate {
+    height: 335px;
+    background-position-x: -270px;
+  }
+}
+@media (max-width: 620px) {
+  .watch-online_donate {
+    height: 187px;
+    background-position-x: -150px;
+  }
 }
 
 .pick-and-feed_donate {
@@ -2227,6 +2246,17 @@ body {
 .donation-info {
   padding-top: 40px;
   padding-bottom: 60px;
+}
+@media (max-width: 1366px) {
+  .donation-info {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 960px) {
+  .donation-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .donation-info__header {
@@ -2238,6 +2268,18 @@ body {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
+@media (max-width: 1366px) {
+  .donation-info__header {
+    width: 780px;
+  }
+}
+@media (max-width: 960px) {
+  .donation-info__header {
+    width: 100%;
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
 
 .donation-info__content {
   margin-top: 10px;
@@ -2247,6 +2289,23 @@ body {
   line-height: 140%;
   color: rgb(255, 255, 255);
 }
+@media (max-width: 1366px) {
+  .donation-info__content {
+    width: 930px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 960px) {
+  .donation-info__content {
+    width: 99%;
+  }
+}
+@media (max-width: 620px) {
+  .donation-info__content {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
 
 .donation-info__notice {
   margin: 0;
@@ -2254,6 +2313,12 @@ body {
   font-size: 36px;
   line-height: 130%;
   color: rgb(254, 144, 19);
+}
+@media (max-width: 620px) {
+  .donation-info__notice {
+    font-size: 24px;
+    line-height: 120%;
+  }
 }
 
 .info-field__inner {

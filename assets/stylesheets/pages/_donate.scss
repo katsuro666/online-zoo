@@ -2,8 +2,24 @@
 
 .watch-online_donate {
   background-image: url(../../assets/images/giant-panda_donate.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 390px;
-  background-position: 0;
+  background-position-y: 0;
+
+  @include media-laptop {
+    background-position-x: -170px;
+  }
+
+  @include media-tablet {
+    height: 335px;
+    background-position-x: -270px;
+  }
+
+  @include media-mobile {
+    height: 187px;
+    background-position-x: -150px;
+  }
 }
 
 // DONATION INFORMATION
@@ -15,6 +31,15 @@
 .donation-info {
   padding-top: 40px;
   padding-bottom: 60px;
+
+  @include media-laptop {
+    padding-bottom: 40px;
+  }
+
+  @include media-tablet {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .donation-info__header {
@@ -23,6 +48,15 @@
   width: 1156px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
+
+  @include media-laptop {
+    width: 780px;
+  }
+  @include media-tablet {
+    width: 100%;
+    font-size: 24px;
+    line-height: 120%;
+  }
 }
 
 .donation-info__content {
@@ -32,12 +66,31 @@
   font-size: 16px;
   line-height: 140%;
   color: rgba(255, 255, 255, 1);
+
+  @include media-laptop {
+    width: 930px;
+    margin-top: 30px;
+  }
+
+  @include media-tablet {
+    width: 99%;
+  }
+
+  @include media-mobile {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .donation-info__notice {
   margin: 0;
   @include h3;
   color: rgba(254, 144, 19, 1);
+
+  @include media-mobile {
+    font-size: 24px;
+    line-height: 120%;
+  }
 }
 
 // PICK AND FEED SECTION
