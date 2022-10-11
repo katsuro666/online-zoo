@@ -3,10 +3,42 @@
 }
 
 .footer-container {
+  position: relative;
   display: flex;
   justify-content:space-between;
   padding-top: 40px;
   padding-bottom: 50px;
+
+  @include media-tablet {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex-direction: column;
+  }
+
+  @include media-mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-info {
+  @include media-tablet {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+
+.footer-socials {
+  @include media-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
 }
 
 .footer-socials__el-wrapper {
@@ -18,10 +50,13 @@
   &:nth-child(4) {
     margin-bottom: 0px;
   }
+
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-socials__el {
-  outline-offset: 3px;
   display: flex;
 
   &:active {
@@ -43,21 +78,48 @@
   line-height: 140%;
   margin: 0;
 
-  
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .footer-socials__el-logo {
   margin-right: 12px;
 
-  
+  @include media-tablet {
+    margin-right: 0;
+  }
 }
 
 .footer-logo {
-  margin: 0;
+  @include media-laptop {
+  background-image: url(/assets/icons/petstory-logo.png);
+  width: 82px;
+  height: 52px;
+  margin-right: 390px;
+  }
+
+  @include media-mobile {
+    background-image: url(/assets/icons/petstory-logo_mobile.png);
+    width: 128px;
+    height: 23px;
+    margin: 0 auto 30px auto;
+  }
 }
 
 .footer__button {
  margin: 68px auto 44px;
+
+ @include media-tablet {
+   margin: 0;
+   order: 2;
+   position: absolute;
+   top: 85px;
+ }
+
+ @include media-mobile {
+   position: inherit;
+ }
 }
 
 // NEXT SECTION - NAVIGATION
@@ -65,7 +127,27 @@
 .footer-navigation {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;  
+  justify-content: space-between;
+
+  @include media-laptop {
+    position: absolute;
+    bottom: 50px;
+    left: 291px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  @include media-tablet {
+    bottom: 12px;
+    left: 0;
+  }
+
+  @include media-mobile {
+    position: inherit;
+    order: 2;
+    margin-top: 35px;
+  }
 }
 
 .footer-navigation__text {
@@ -88,6 +170,18 @@
   &:nth-child(4) {
     margin-right: 0px;
   }
+
+  @include media-laptop {
+    margin-right: 48px;
+  }
+
+  @include media-tablet {
+    margin-right: 37px;
+  }
+
+  @include media-mobile {
+    margin-right: 30px;
+  }
 }
 
 // NEXT SECTION - SUBSCRIPTION & COPYRIGHT
@@ -95,6 +189,24 @@
 .footer-other {
   display: flex;
   flex-direction: column;
+
+  @include media-tablet {
+    margin-top: 32px;
+  }
+
+  @include media-mobile {
+    margin-top: 20px;
+  }
+}
+
+.footer-subscription {
+  @include media-laptop {
+    padding-right: 32px;
+  }
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .footer__copyright {
@@ -108,6 +220,8 @@
     font-size: 16px;
     line-height: 130%;
   }
+
+  
 }
 
 .footer-subscription p {

@@ -727,6 +727,7 @@ body {
 
 .pets-inner {
   position: relative;
+  overflow: hidden;
 }
 
 .pets-container {
@@ -1175,13 +1176,13 @@ body {
 @media (max-width: 1366px) {
   .testimonials-container {
     margin-top: 30px;
+    overflow: hidden;
   }
 }
 @media (max-width: 960px) {
   .testimonials-container {
     flex-direction: column;
     height: 372px;
-    overflow: hidden;
   }
 }
 @media (max-width: 620px) {
@@ -1337,10 +1338,45 @@ body {
 }
 
 .footer-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 50px;
+}
+@media (max-width: 960px) {
+  .footer-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 620px) {
+  .footer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 620px) {
+  .footer-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
 }
 
 .footer-socials__el-wrapper {
@@ -1354,9 +1390,13 @@ body {
 .footer-socials__el-wrapper:nth-child(4) {
   margin-bottom: 0px;
 }
+@media (max-width: 960px) {
+  .footer-socials__el-wrapper {
+    margin-bottom: 20px;
+  }
+}
 
 .footer-socials__el {
-  outline-offset: 3px;
   display: flex;
 }
 .footer-socials__el:active svg circle {
@@ -1374,23 +1414,82 @@ body {
   line-height: 140%;
   margin: 0;
 }
+@media (max-width: 960px) {
+  .footer-socials__el-text {
+    display: none;
+  }
+}
 
 .footer-socials__el-logo {
   margin-right: 12px;
 }
+@media (max-width: 960px) {
+  .footer-socials__el-logo {
+    margin-right: 0;
+  }
+}
 
-.footer-logo {
-  margin: 0;
+@media (max-width: 1366px) {
+  .footer-logo {
+    background-image: url(/assets/icons/petstory-logo.png);
+    width: 82px;
+    height: 52px;
+    margin-right: 390px;
+  }
+}
+@media (max-width: 620px) {
+  .footer-logo {
+    background-image: url(/assets/icons/petstory-logo_mobile.png);
+    width: 128px;
+    height: 23px;
+    margin: 0 auto 30px auto;
+  }
 }
 
 .footer__button {
   margin: 68px auto 44px;
+}
+@media (max-width: 960px) {
+  .footer__button {
+    margin: 0;
+    order: 2;
+    position: absolute;
+    top: 85px;
+  }
+}
+@media (max-width: 620px) {
+  .footer__button {
+    position: inherit;
+  }
 }
 
 .footer-navigation {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+@media (max-width: 1366px) {
+  .footer-navigation {
+    position: absolute;
+    bottom: 50px;
+    left: 291px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 960px) {
+  .footer-navigation {
+    bottom: 12px;
+    left: 0;
+  }
+}
+@media (max-width: 620px) {
+  .footer-navigation {
+    position: inherit;
+    order: 2;
+    margin-top: 35px;
+  }
 }
 
 .footer-navigation__text {
@@ -1412,10 +1511,46 @@ body {
 .footer-navigation__el:nth-child(4) {
   margin-right: 0px;
 }
+@media (max-width: 1366px) {
+  .footer-navigation__el {
+    margin-right: 48px;
+  }
+}
+@media (max-width: 960px) {
+  .footer-navigation__el {
+    margin-right: 37px;
+  }
+}
+@media (max-width: 620px) {
+  .footer-navigation__el {
+    margin-right: 30px;
+  }
+}
 
 .footer-other {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 960px) {
+  .footer-other {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 620px) {
+  .footer-other {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .footer-subscription {
+    padding-right: 32px;
+  }
+}
+@media (max-width: 960px) {
+  .footer-subscription {
+    display: none;
+  }
 }
 
 .footer__copyright {
@@ -1498,6 +1633,10 @@ body {
   .watch-online__button {
     margin: 20px auto 0 auto;
   }
+}
+
+.button-container {
+  position: relative;
 }
 
 .pets__button {
