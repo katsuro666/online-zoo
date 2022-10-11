@@ -438,7 +438,7 @@ body {
 }
 
 .header-logo {
-  background-image: url(/assets/icons/petstory-logo.png);
+  background-image: url(../icons/petstory-logo.png);
   background-repeat: no-repeat;
   width: 82px;
   height: 52px;
@@ -1430,7 +1430,7 @@ body {
 
 @media (max-width: 1366px) {
   .footer-logo {
-    background-image: url(/assets/icons/petstory-logo.png);
+    background-image: url(../icons/petstory-logo.png);
     width: 82px;
     height: 52px;
     margin-right: 390px;
@@ -1438,7 +1438,7 @@ body {
 }
 @media (max-width: 620px) {
   .footer-logo {
-    background-image: url(/assets/icons/petstory-logo_mobile.png);
+    background-image: url(../icons/petstory-logo_mobile.png);
     width: 128px;
     height: 23px;
     margin: 0 auto 30px auto;
@@ -1792,7 +1792,7 @@ body {
   height: 117px;
   display: none;
   position: absolute;
-  bottom: -60px;
+  bottom: -10px;
   left: 15px;
   z-index: 100;
 }
