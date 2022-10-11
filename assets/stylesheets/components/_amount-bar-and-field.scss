@@ -1,16 +1,29 @@
 /// AMOUNT BAR
 
+.donation-block {
+  @include media-laptop {
+    margin-left: 65px;
+  }
+
+  @include media-tablet {
+    margin: 0;
+  }
+}
+
 .donation-block-header {
   margin: 48px auto 17px 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #000000;
-}
 
-.radio-wrapper {
-  display: flex;  //////
-  flex-direction: row; /// ??? delete
+  @include media-tablet {
+    margin: 41px auto 7px 10px;
+  }
+
+  @include media-mobile {
+    margin: 4px auto 8px 0;
+  }
 }
 
 .radio-buttons {
@@ -37,6 +50,13 @@
     width: 0px;
     height: 0px;
     transition: all .4s ease;
+
+    & svg {
+      @include media-mobile {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   .bckgrnd-line {
@@ -44,6 +64,19 @@
     height: 2px;
     background: #72828E;
     margin-left: 31px;
+
+    @include media-laptop {
+      width: 785px;
+    }
+
+    @include media-tablet {
+      width: 524px;
+    }
+
+    @include media-mobile {
+      width: 262px;
+      margin-left: 20.5px;
+    }
   }
 
   /// YELLOW POINTS POSITION ON THE BAR
@@ -51,41 +84,88 @@
   .first-point {
     @include amount-point;
     left: 26px;
+
+    @include media-mobile {
+      width: 5px;
+      height: 5px;
+      top: 4px;
+      left: 17.5px;
+    }
   }
 
   .second-point {
     @include amount-point;
     left: 156px;
+
+    @include media-mobile {
+      width: 5px;
+      height: 5px;
+      top: 4px;
+      left: 82.5px;
+    }
   }
 
   .third-point {
     @include amount-point;
     left: 286px;
+
+    @include media-mobile {
+      width: 5px;
+      height: 5px;
+      top: 4px;
+      left: 147.5px;
+    }
   }
 
   .fourth-point {
     @include amount-point;
     left: 416px;
+
+    @include media-mobile {
+      width: 5px;
+      height: 5px;
+      top: 4px;
+      left: 212.5px;
+    }
   }
 
   .fifth-point {
     @include amount-point;
     left: 546px;
+
+    @include media-mobile {
+      width: 5px;
+      height: 5px;
+      top: 4px;
+      left: 277.5px;
+    }
   }
 
   .sixth-point {
     @include amount-point;
     left: 676px;
+
+    @include media-tablet {
+      display: none;
+    }
   }
 
   .seventh-point {
     @include amount-point;
     left: 806px;
+
+    @include media-tablet {
+      display: none;
+    }
   }
 
   .eighth-point {
     @include amount-point;
     left: 936px;
+
+    @include media-laptop {
+      display: none;
+    }
   }
 
   /// SLIDER POSITION
@@ -93,49 +173,111 @@
   .first-pos {
     &:checked ~ .slider {
       left: 11px;
+
+      @include media-mobile {
+       left: 10px;
+       top: -3.5px;
       }
+    }
   }
   
   .second-pos {
     &:checked ~ .slider {
       left: 141px;
+
+      @include media-mobile {
+        left: 75px;
+        top: -3.5px;
+       }
     }
   }
   
   .third-pos {
     &:checked ~ .slider {
       left: 271px;
+
+      @include media-mobile {
+        left: 140px;
+        top: -3.5px;
+       }
     }
   }
   
   .fourth-pos {
     &:checked ~ .slider {
       left: 401px;
+
+      @include media-mobile {
+        left: 205px;
+        top: -3.5px;
+      }
     }
   }
   
   .fifth-pos {
     &:checked ~ .slider {
       left: 531px;
+
+      @include media-mobile {
+        left: 270px;
+        top: -3.5px;
+       }
     }
   }
   
   .sixth-pos {
     &:checked ~ .slider {
       left: 661px;
+
+      @include media-tablet {
+        display: none;
+      }
+
+      @include media-mobile {
+        left: 271px;
+      }
     }
   }
   
   .seventh-pos {
     &:checked ~ .slider {
       left: 791px;
+
+      @include media-tablet {
+        display: none;
+      }
+
+      @include media-mobile {
+        left: 401px;
+      }
     }
   }
   
   .eighth-pos {
     &:checked ~ .slider {
       left: 921px;
+
+      @include media-laptop {
+      display: none;
+      }
+
+      @include media-mobile {
+        left: 531px;
+      }
     }
+  }
+
+  @include media-laptop {
+    width: 824px;
+  }
+
+  @include media-tablet {
+    width: 600px;
+  }
+
+  @include media-mobile {
+    width: 300px;
+    height: 13.5px;
   }
 }
 
@@ -152,36 +294,64 @@
 .second-sec {
   @include amount-section;
   left: 141px;
+
+  @include media-mobile {
+    left: 67px;
+   }
 }
 
 .third-sec {
   @include amount-section;
   left: 271px;
+
+  @include media-mobile {
+    left: 127px;
+   }
 }
 
 .fourth-sec {
   @include amount-section;
   left: 401px;
+  
+  @include media-mobile {
+    left: 192px;
+   }
 }
 
 .fifth-sec {
   @include amount-section;
   left: 531px;
+
+  @include media-mobile {
+    left: 257px;
+   }
 }
 
 .sixth-sec {
   @include amount-section;
   left: 661px;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .seventh-sec {
   @include amount-section;
   left: 791px;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .eighth-sec {
   @include amount-section;
   left: 921px;
+
+  @include media-laptop {
+    display: none;
+  }
 }
 
 /// AMOUNT NUMBERS
@@ -190,6 +360,14 @@
   position: relative;
   height: 36px;
   margin: 12px auto 50px;
+
+  @include media-tablet {
+    margin-left: 17px;
+  }
+
+  @include media-mobile {
+    margin: 6px auto 25px 0px;
+   }
 }
 
 .donation-amount__number {
@@ -199,32 +377,118 @@
   font-size: 26px;
   line-height: 140%;
 
+  @include media-mobile {
+    font-size: 13px;
+  }
+
+  &:nth-child(1) {
+    @include media-laptop {
+      display: none;
+    }
+  }
+
   &:nth-child(2) {
     left: 130px;
+
+    @include media-laptop {
+      left: 0;
+    }
+
+    @include media-tablet {
+      display: none;
+    }
   }
 
   &:nth-child(3) {
     left: 260px;
+
+    @include media-laptop {
+      left: 130px;
+    }
+
+    @include media-tablet {
+      display: none;
+    }
   }
 
   &:nth-child(4) {
     left: 390px;
+
+    @include media-laptop {
+      left: 260px;
+    }
+
+    @include media-tablet {
+      left: 17px;
+    }
+
+    @include media-mobile {
+      left: 8.5px;
+    }
   }
 
   &:nth-child(5) {
     left: 520px;
+
+    @include media-laptop {
+      left: 390px;
+    }
+
+     @include media-tablet {
+      left: 130px;
+    }
+
+    @include media-mobile {
+      left: 73.5px;
+    }
   }
 
   &:nth-child(6) {
     left: 650px;
+
+    @include media-laptop {
+      left: 520px;
+    }
+
+    @include media-tablet {
+      left: 260px;
+    }
+
+    @include media-mobile {
+      left: 138.5px;
+    }
   }
 
   &:nth-child(7) {
     left: 780px;
+
+    @include media-laptop {
+      left: 650px;
+    }
+
+    @include media-tablet {
+      left: 390px;
+    }
+
+    @include media-mobile {
+      left: 203.5px;
+    }
   }
 
   &:nth-child(8) {
     left: 910px;
+    
+    @include media-laptop {
+      left: 780px;
+    }
+
+    @include media-tablet {
+      left: 520px;
+    }
+
+    @include media-mobile {
+      left: 268.5px;
+    }
   }
 }
 
@@ -265,6 +529,15 @@
         color: transparent;
       }
     }
+
+    @include media-tablet {
+      width: 180px;
+      margin-bottom: 31px;
+    }
+
+    @include media-mobile {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -272,6 +545,10 @@
   position: absolute;
   top: 17px;
   left: 248px;
+
+  @include media-tablet {
+    left: 160px;
+  }
 }
 
 /// PICK FREQUENCY RADIO

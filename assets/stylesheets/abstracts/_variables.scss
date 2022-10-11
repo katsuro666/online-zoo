@@ -4,8 +4,6 @@
 
 
 
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Roboto', sans-serif !default;
@@ -13,8 +11,6 @@ $text-font-stack: 'Roboto', sans-serif !default;
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
 
 
 
@@ -56,8 +52,8 @@ $red: rgba(211, 20, 20, 1) !default;
 $max-width: 1160px !default;
 
 
-/// Breakpoints
 
+/// Breakpoints
 $laptop-width: 1366px;
 $tablet-width: 960px;
 $mobile-width: 620px;

@@ -21,7 +21,6 @@
   max-width: 1160px; /* 1 */
   margin: 0 auto; /* 2 */
   width: 100%; /* 1 */
-  outline: 3px solid red;
 
   @include media-laptop {
     max-width: 940px;

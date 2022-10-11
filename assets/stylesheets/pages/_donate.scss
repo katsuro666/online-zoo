@@ -26,6 +26,18 @@
 
 .pick-and-feed_donate {
   padding: 0;
+
+  @include media-laptop {
+    padding-bottom: 30px;
+  }
+
+  @include media-tablet {
+    padding-bottom: 46px;
+  }
+
+  @include media-mobile {
+    padding-bottom: 21px;
+  }
 }
 
 .donation-info {
@@ -93,12 +105,26 @@
   }
 }
 
-// PICK AND FEED SECTION
+/// PICK AND FEED sections
+
+// info
 
 .info-field__inner {
   margin: auto;
   margin-top: 40px;
   margin-bottom: 60px;
+
+  @include media-laptop {
+    margin: 10px 0 46px 0;
+  }
+
+  @include media-tablet {
+    margin: 19px 0 31px 0;
+  }
+
+  @include media-mobile {
+    margin: 20px 0 20px 0;
+  }
 }
 
 .info-field__inner-header {
@@ -106,16 +132,50 @@
   color: rgba(254, 144, 19, 1);
   margin: 40px auto 20px auto;
   text-align: center;
+
+  @include media-laptop {
+    margin: 20px auto 10px auto;   
+  }
+
+  @include media-tablet {
+    margin: 11px auto 20px auto;
+  }
+
+  @include media-mobile {
+    margin: 0 auto 10px auto;
+    font-size: 24px;
+  }
 }
 
 .info-field__inner-content {
   @include subtitle;
   margin: 0 auto 60px auto;
+
+  @include media-laptop {
+  margin-left: 47px;
+  }
+
+  @include media-tablet {
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+
+  @include media-mobile {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
+
+// animal diet
 
 .animal-diet {
   display: flex;
   justify-content: center;
+
+  @include media-mobile {
+    width: fit-content;
+  }
 }
 
 .animal-diet__perday {
@@ -132,27 +192,68 @@
   text-transform: uppercase;
   color: #000000;
   margin: auto 0 11px 0;
+
+  @include media-mobile {
+    font-size: 40.6px;
+  }
 }
 
 .animal-diet__perday_text {
   margin: 0 0 17px 0;
   text-align: center;
+
+  @include media-laptop {
+    margin-bottom: 50px;
+  }
+
+  @include media-mobile {
+    font-size: 9px;
+    margin-bottom: 28px;
+  }
 }
 
 .animal-diet__x {
   width: 14px;
   height: 14px;
   margin-top: 163px;
+  margin: 163px 64px auto 11px;
+
+  @include media-laptop {
+    margin-top: 130px;
+  }
+
+  @include media-mobile {
+    width: 8px;
+    height: 8px;
+    margin: 73px 36px auto 6px;
+  }
 }
 
 .animal-diet__icon {
   margin: 0;
+
+  @include media-mobile {
+    width: 160px;
+    height: 140px;
+  }
 }
 
 ////// AMOUNT FORM ETC
 
 .amount-form {
   margin-left: 354px;
+
+  @include media-laptop {
+    margin-left: 336px;
+  }
+
+  @include media-tablet {
+    margin-left: 210px;
+  }
+
+  @include media-mobile {
+    margin-left: 61px;
+  }
 }
 
 .pick-frequency {
@@ -162,13 +263,42 @@
     margin-right: 50px;
     cursor: pointer;
   }
+
+  @include media-laptop {
+    margin-left: 363px;
+  }
+
+  @include media-tablet {
+    margin-left: 192px;
+  }
+
+  @include media-mobile {
+    margin-left: 41px;
+  }
 }
 
 .pick-and-feed__button_donate {
   margin: 31px auto 30px 342px;
+
+  @include media-laptop {
+    margin-left: 323px;
+  }
+
+  @include media-tablet {
+    margin-left: 152px;
+  }
+
+  @include media-mobile {
+    margin: 27px 0 30px 0;
+  }
 }
 
 .donation-notice {
   text-align: center;
   margin: 0;
+
+  @include media-mobile {
+    text-align: inherit;
+    width: 301px;
+  }
 }
